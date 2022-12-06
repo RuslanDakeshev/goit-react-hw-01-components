@@ -21,16 +21,23 @@ export const Avatar = styled.img`
   margin: 0 13px;
 `;
 
-export const Online = styled.span`
+export const IsOnlineSpan = styled.span`
   height: 18px;
   width: 18px;
-  background-color: green;
   border-radius: 50%;
+  background-color: ${({ isOn }) => (isOn ? 'green' : 'red')};
 `;
 
-export const Offline = styled.span`
-  height: 18px;
-  width: 18px;
-  background-color: red;
-  border-radius: 50%;
-`;
+// export const Online = styled.span`
+//   height: 18px;
+//   width: 18px;
+//   background-color: green;
+//   border-radius: 50%;
+// `;
+
+// export const Offline = styled.span`
+//   height: 18px;
+//   width: 18px;
+//   background-color: red;
+//   border-radius: 50%;
+// `;

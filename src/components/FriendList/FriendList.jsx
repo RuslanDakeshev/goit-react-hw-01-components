@@ -7,10 +7,10 @@ import { Container } from './FriendList.styled';
 export const FriendList = ({ friends }) => {
   return (
     <Container>
-      {friends.map(friends => {
+      {friends.map(friend => {
         return (
-          <ul key={friends.id}>
-            <FriendListItem friends={friends} />
+          <ul key={friend.id}>
+            <FriendListItem friends={friend} />
           </ul>
         );
       })}
